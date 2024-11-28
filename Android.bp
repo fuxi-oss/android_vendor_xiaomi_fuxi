@@ -5488,7 +5488,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcodec2_core.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_hooks", "libqcodec2_utils", "libqcodec2_platform", "libqcodec2_basecodec", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["qcodec2_shim", "libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_hooks", "libqcodec2_utils", "libqcodec2_platform", "libqcodec2_basecodec", "qti.video.utils.videobufferlayout", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9082,7 +9082,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.libdpmframework.so"],
-			shared_libs: ["libdiag", "libbinder", "libbinder_ndk", "libcutils", "libutils", "liblog", "libhidlbase", "libhardware", "libhardware_legacy", "com.qualcomm.qti.dpm.api@1.0", "vendor.qti.hardware.dpmservice@1.0", "vendor.qti.hardware.dpmservice@1.1", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libhidlbase_shim", "libdiag", "libbinder", "libbinder_ndk", "libcutils", "libutils", "liblog", "libhidlbase", "libhardware", "libhardware_legacy", "com.qualcomm.qti.dpm.api@1.0", "vendor.qti.hardware.dpmservice@1.0", "vendor.qti.hardware.dpmservice@1.1", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
