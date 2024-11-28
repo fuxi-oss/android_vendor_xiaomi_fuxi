@@ -1148,6 +1148,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
+    libqesdk2_0 \
     android.hardware.secure_element@1.0-impl \
     btaudio_offload_if \
     c2.dolby.client \
@@ -1499,7 +1500,6 @@ PRODUCT_PACKAGES += \
     libqdi \
     libqdp \
     libqdpr \
-    libqesdk2_0 \
     libqesdk_manager \
     libqisl \
     libqmi \
